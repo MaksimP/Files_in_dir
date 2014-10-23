@@ -2,10 +2,10 @@ import java.io.File;
 
 public class Tools {
 
-    private static String[] list_files;
-
     public static String[] present_files()
    {
+       String[] list_files;
+
        File file = new File(Const.getDir_path());
        list_files = file.list(new FilterFile());
        return list_files;
